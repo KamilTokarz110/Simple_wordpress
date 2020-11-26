@@ -19,19 +19,19 @@
             
           
            
-                
-			<img class="main__about__image main__about__image-show" src="images/main_slider_1_new.png" alt="">
-			<img class="main__about__image" src="images/main_slider_2_new.png" alt="">
-			<img class="main__about__image" src="images/main_slider_3_new.png" alt="">
-			<img class="main__about__image" src="images/main_slider_4_new.png" alt="">
+
+			<img class="main__about__image main__about__image-show" src="<?php echo CFS()->get( 'slider_image_1' );?>" alt="">
+			<img class="main__about__image" src="<?php echo CFS()->get( 'slider_image_2' );?>" alt="">
+			<img class="main__about__image" src="<?php echo CFS()->get( 'slider_image_3' );?>" alt="">
+			<img class="main__about__image" src="<?php echo CFS()->get( 'slider_image_4' );?>" alt="">
 	   
 			<?php get_sidebar(); ?>
 	   
 	<div class="about__content content">
 		<div class="about__content__title">
 			<h1 class="about__content__title-text"><?php echo CFS()->get('title_main');?></h1>
-			<p class="about__content__title-mid">- z nami biznes jest prostszy!</p>
-			<p class= "about__content__title-bottom">Dowiedź się więcej</p>
+			<p class="about__content__title-mid"><?php echo CFS()->get('slogan_main');?></p>
+			<p class= "about__content__title-bottom"><?php echo CFS()->get('view_more');?></p>
 		</div>
 		
 		<div class="about__content__newsletter">
