@@ -60,11 +60,11 @@
 	</section>
 	<section id="industries__section" class="industries">
 		<div class="industries__header content">
-			<h2 class="header__title">Branże</h2>
+			<h2 class="header__title"><?php echo CFS()->get('title_industries');?></h2>
 		</div>
 	<div class="industries__gallery content">
 		<div class="gallery__column">
-			<div class="gallery__item "><p class="gallery__item-text gallery__item-text--shadow">Edukacja</p><img class="gallery__image" src="images/industries__education.png" alt="">
+			<div class="gallery__item "><p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industrie_name_1');?></p><img class="gallery__image" src="images/industries__education.png" alt="">
 				<img src="images/industries__education-320.png" alt="" class="gallery__image--small"></div>
 			<div class="gallery__item">
 				<p class="gallery__item-text gallery__item-text--shadow">Budownictwo</p>

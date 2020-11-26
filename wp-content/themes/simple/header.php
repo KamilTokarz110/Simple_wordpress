@@ -31,16 +31,16 @@
             <header class="main__header">
                 
             <div class="menu__content content">
-                    <div class="menu__logo"><img class="menu__logo__image" src="images/logo_simple_copy.png" alt="">
+                    <div class="menu__logo"><img class="menu__logo__image" src="<?php echo CFS()->get('menu_image');?>" alt="">
             </div>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#industries__section" class="menu__link">Branże</a></li>
-                        <li class="menu__item"><a href="#products__section" class="menu__link">Produkty</a></li>
-                        <li class="menu__item"><a href="#services__section" class="menu__link">Usługi</a></li>
-                        <li class="menu__item"><a href="#news__section" class="menu__link">Aktualności</a></li>
-                        <li class="menu__item"><a href="#contact__section" class="menu__link">Kontakt</a></li>
-                        <li class="menu__item"><a href="#contact__section" class="menu__link">Referencje</a></li>
+                        <li class="menu__item"><a href="#industries__section" class="menu__link"><?php echo CFS()->get('menu_link_1');?></a></li>
+                        <li class="menu__item"><a href="#products__section" class="menu__link"><?php echo CFS()->get('menu_link_2');?></a></li>
+                        <li class="menu__item"><a href="#services__section" class="menu__link"><?php echo CFS()->get('menu_link_3');?></a></li>
+                        <li class="menu__item"><a href="#news__section" class="menu__link"><?php echo CFS()->get('menu_link_4');?></a></li>
+                        <li class="menu__item"><a href="#contact__section" class="menu__link"><?php echo CFS()->get('menu_link_5');?></a></li>
+                        <li class="menu__item"><a href="#contact__section" class="menu__link"><?php echo CFS()->get('menu_link_6');?></a></li>
                     </ul>
                     
                 </nav>
