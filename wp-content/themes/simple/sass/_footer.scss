@@ -1,0 +1,264 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 145px;
+    width: 100%;
+    background-color: white;
+
+    // .footer__company__list--medium {
+    //     display: none;
+    // }
+
+    &__company__list {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        // background-color: darkblue;
+    }
+
+    .company__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+
+        // margin: 0 50px;
+        // background-color: darkgreen;
+        &--medium {
+            display: none;
+        }
+
+        .company__image {
+            max-width: 100%;
+            max-height: 100%;
+
+            // width: 100%;
+            // height: 100%;
+            &--medium {
+                display: none;
+            }
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        width: 30px;
+        right: -10%;
+
+        &--right {
+            position: absolute;
+            left: -10%;
+        }
+
+        .arrow__image {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+
+
+            &--rotated {
+
+                transform: rotate(180deg);
+
+
+
+            }
+
+        }
+    }
+
+    .footer__slider--small {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:$medium-device) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        width: 100%;
+        background-color: white;
+
+        // .footer__arrow {
+        //     padding-left: 37px;
+
+        //     &--right {
+        //         padding-right: 37px;
+        //     }
+
+        //     .arrow__image {
+        //         width: 100%;
+        //         width: 15px;
+        //         height: 25px;
+
+        //         &--right {
+
+        //             width: 100%;
+        //             width: 15px;
+
+        //         }
+        //     }
+        // }
+
+        &__arrow {
+            position: absolute;
+            width: 20px;
+            right: -10%;
+
+            &--right {
+                position: absolute;
+                left: -10%;
+            }
+
+            .arrow__image {
+                max-width: 100%;
+                max-height: 100%;
+                cursor: pointer;
+
+
+                &--rotated {
+
+                    transform: rotate(180deg);
+
+
+
+                }
+
+            }
+        }
+
+        .footer__company__list--medium {
+            display: none;
+            // justify-content: center;
+            // align-items: center;
+            // height: 90px;
+            // width: 85%;
+            // margin: 0 auto;
+            // // background-color: green;
+
+        }
+
+        .footer__company__list {
+            // display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            width: 85%;
+            margin: 0 auto;
+            // background-color: green;
+
+        }
+
+        .company__item {
+            display: flex;
+            margin-left: 0px;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+
+            margin: 0px 0px 0px 0px;
+
+            &--medium {
+                display: none;
+
+                //     align-items: center;
+                //     justify-content: center;
+                //     width: 100px;
+                //     height: 100px;
+
+                //     margin: 0px 0px 20px 0px;
+                // }
+            }
+        }
+
+
+
+        .company__image {
+            display: flex;
+            max-width: 100%;
+            height: auto;
+
+            &--medium {
+                display: none;
+                // width: 100%;
+            }
+
+        }
+
+        .footer__slider--small {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:$small-device) {
+    .footer {
+
+        height: 86px;
+        width: 100%;
+
+
+
+
+        .footer__slider--small {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+            width: 90%;
+
+            .company__item--small {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90px;
+                height: 80px;
+            }
+
+            .footer__arrow--small {
+                width: 21px;
+                height: 34px;
+
+                .arrow__image--small {
+                    width: 100%;
+                }
+            }
+
+            .footer__arrow--rotate {
+
+                transform: rotate(180deg);
+            }
+
+            .slick-next {
+                position: absolute;
+                // background-color: green;
+                right: -20px;
+                bottom: 20px;
+            }
+        }
+
+
+
+        .footer__arrow {
+            display: none;
+
+        }
+
+        .footer__company__list {
+            display: none;
+        }
+    }
+}
