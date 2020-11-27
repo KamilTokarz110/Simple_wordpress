@@ -57,13 +57,21 @@ Template Name: HomeTemp
 <section id="industries__section" class="industries">
 		<div class="industries__header content">
 			<h2 class="header__title"><?php echo CFS()->get('title_industries');?></h2>
-		</div>
+        </div>
+        
 	<div class="industries__gallery content">
+   <?php $industries = CFS()->get( 'industries_loop' );
+   if($industries){
+foreach ( $industries as $field ) {
+    echo $field['industries_name'];
+   
+    }
+} ?>
 		<div class="gallery__column">
-			<div class="gallery__item "><p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industrie_name_1');?></p><img class="gallery__image" src="<?php echo CFS()->get('industrie_image_1');?>" alt="">
+			<div class="gallery__item "><p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industries_loop');?></p><img class="gallery__image" src="<?php echo CFS()->get('industrie_image_1');?>" alt="">
 				<img src="images/industries__education-320.png" alt="" class="gallery__image--small"></div>
 			<div class="gallery__item">
-				<p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industrie_name_2');?></p>
+				<p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industries_name');?></p>
 				<img class="gallery__image" src="<?php echo CFS()->get('industrie_image_2');?>" alt="">
 				<img class="gallery__image gallery__image--small" src="images/industries_construction_320.png" alt="" >
 			</div>
@@ -99,7 +107,8 @@ Template Name: HomeTemp
 			<div class="gallery__item"><p class="gallery__text"><?php echo CFS()->get('description_3');?></p></div>
 		</div>
 	</div>
-	</section>
+    </section>
+    
     
     
 <?php endwhile;
