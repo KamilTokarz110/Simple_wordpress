@@ -72,20 +72,20 @@
 				<img class="gallery__image gallery__image--small" src="images/industries_construction_320.png" alt="" >
 			</div>
 			<div class="gallery__item gallery__item--gray">
-				<p class="gallery__item-text"><?php echo CFS()->get('industrie_name_3');?></p></div>
+				<p class="gallery__item-text"><?php echo CFS()->get('industrie_name_1');?></p></div>
 			<div class="gallery__item"><p class="gallery__text">SIMPLE to znak rozpoznawczy szerokiej rodziny rozwiązań informatycznych wspomagających zarządzanie obszarami: finansów, obrotu towarowego, personelu, procesu budownictwa, produkcji, łańcucha dostaw czy relacji z klientami. Od ponad 24 lat dostarczamy wyspecjalizowane usługi integracji rozwiązań informatycznych i </p></div>
 		</div>
 		<div class="gallery__column">
-			<div class="gallery__item "><p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industrie_name_4');?></p>
+			<div class="gallery__item "><p class="gallery__item-text gallery__item-text--shadow">Transport & Logistyka</p>
 				<img class="gallery__image" src="images/industries__transport.png" alt="">
 				<img class="gallery__image gallery__image--small" src="images/industries_transport_320.png" alt="" >
 			</div>
 			<div class="gallery__item">
-				<p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industrie_name_5');?></p>
+				<p class="gallery__item-text gallery__item-text--shadow">Instytuty</p>
 				<img class= "gallery__image" src="images/industries__institution.png" alt="">
 				<img class= "gallery__image gallery__image--small" src="images/industries_institution_320.png" alt="" >
 			</div>
-			<div class= "gallery__item gallery__item--gray"><p class="gallery__item-text"><?php echo CFS()->get('industrie_name_6');?></p></div>
+			<div class= "gallery__item gallery__item--gray"><p class="gallery__item-text">MSP</p></div>
 			<div class= "gallery__item"><p class="gallery__text">doradztwa biznesowego. Nasze produkty i usługi znalazły uznanie ponad 3500 klientów.<br><br>    
 
 			Jesteśmy ludźmi, którzy doskonale znają Twój biznes. Opierając się na naszym doświadczeniu proponujemy rozwiązania, które powstały w oparciu o 
@@ -93,16 +93,16 @@
 		</div>
 		<div class="gallery__column">
 			<div class="gallery__item gallery__item">
-				<p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industrie_name_7');?></p>
+				<p class="gallery__item-text gallery__item-text--shadow">Produkcja</p>
 				<img class="gallery__image" src="images/industries__production.png" alt="">
 				<img class="gallery__image gallery__image--small" src="images/industries_production_320.png" alt="">
 			</div>
 			<div class="gallery__item">
-				<p class="gallery__item-text gallery__item-text--shadow"><?php echo CFS()->get('industrie_name_8');?></p>
+				<p class="gallery__item-text gallery__item-text--shadow">Medycyna</p>
 				<img class="gallery__image" src="images/industries__med.png" alt="">
 				<img class="gallery__image gallery__image--small" src="images/industries_medicine_320.png" alt="">
 			</div>
-			<div class="gallery__item gallery__item--gray"><p class="gallery__item-text"><?php echo CFS()->get('industrie_name_9');?></p></div>
+			<div class="gallery__item gallery__item--gray"><p class="gallery__item-text">Administracja Publiczna</p></div>
 			<div class="gallery__item"><p class="gallery__text">wiedzę zatrudnianych przez nas ekspertów, a które generalnie podnoszą rangę prowadzonych procesów biznesowych i spełniają specyficzne wymagania przedsiębiorstw poszczególnych branż, zapewniając możliwość odniesienia sukcesu w coraz silniej konkurencyjnym otoczeniu.</p></div>
 		</div>
 	</div>
