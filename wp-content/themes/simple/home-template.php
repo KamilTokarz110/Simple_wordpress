@@ -128,10 +128,9 @@ foreach ( $industriesCol3 as $field ) { ?>
             
         <div class="products__header">
                 <div class="header__image"><img class="header__image__picture" src="images/products_open_folder.png" alt=""></div>
-                <h2 class="header__title">Produkty</h2>
+                <h2 class="header__title"><?php echo CFS()->get('title_products');?></h2> 
             </div>
-            <div class="products__description"><p class="products__text">Nieustannie doskonalimy nasze produkty i usługi. Budujemy naszą ofertę z myślą o potrzebach biznesowych i profilach branżowych naszych Klientów.<br>
-                Nasza oferta obejmuje bogate portfolio innowacyjnych systemów informatycznych<br>kompleksowo wspomagających zarządzanie - powstałych na bazie blisko dwudziestoletnich doświadczeń i liczbie ponad 23 tysięcy użytkowników - wzbogacone kompetencjami związanymi z optymalnym doborem infrastruktury informatycznej i profesjonalnymi usługami.</p>
+            <div class="products__description"><p class="products__text"><?php echo CFS()->get('description_col_1');?></p>
             </div>
             <div class="products__list--small">
                 <div class="products__item--small"><p class="item__text--small">WMS</p> </div>
@@ -146,11 +145,20 @@ foreach ( $industriesCol3 as $field ) { ?>
                 <div class="products__item--small"><p class="item__text--small">eSIMPLE.KARO HRMS</p></div>
             </div>
             <div class="products__list">
-            <div class="products__column">
-                <div class="products__item"><p class="item__text">WMS</p> </div>
-                <div class="products__item"><p class="item__text">OBIEG DOKUMENTÓW</p></div>
+			<?php $products = CFS()->get( 'products_loop');
+
+if($products){
+
+foreach ( $products as $product ) { ?>
+
+			<div class="products__column">
+                <div class="products__item"><p class="item__text"><?php echo $product['product_name']; ?></p> </div>
+                <div class="products__item"><p class="item__text"><?php echo $product['product_name_2']; ?></p></div>
             </div>
-            <div class="products__column">
+
+<?php	}} ?>
+            
+            <!-- <div class="products__column">
                 <div class="products__item"><p class="item__text">SIMPLE.<br>ERP</p></div>
                 <div class="products__item"><p class="item__text">SIMPLE.<br>BI</p></div>
             </div>
@@ -165,7 +173,7 @@ foreach ( $industriesCol3 as $field ) { ?>
             <div class="products__column">
                 <div class="products__item"><p class="item__text">MICROSOFT<br>DYNAMICS<br>CRM 2011 </p></div>
                 <div class="products__item"><p class="item__text">eSIMPLE.<br>KAROHRMS</p></div>
-            </div>
+            </div> -->
             </div>
         </div>
         </section>
