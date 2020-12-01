@@ -158,25 +158,103 @@ foreach ( $products as $product ) { ?>
 
 <?php	}} ?>
             
-            <!-- <div class="products__column">
-                <div class="products__item"><p class="item__text">SIMPLE.<br>ERP</p></div>
-                <div class="products__item"><p class="item__text">SIMPLE.<br>BI</p></div>
-            </div>
-            <div class="products__column">
-                <div class="products__item"><p class="item__text">SIMPLE.<br>SPRINT</p></div>
-                <div class="products__item"><p class="item__text">SIMPLE.<br>APS</p></div>
-            </div>
-            <div class="products__column">
-                <div class="products__item"><p class="item__text">SIMPLE.<br>CRM</p></div>
-                <div class="products__item"><p class="item__text">SIMPLE.<br>SCM</p></div>
-            </div>
-            <div class="products__column">
-                <div class="products__item"><p class="item__text">MICROSOFT<br>DYNAMICS<br>CRM 2011 </p></div>
-                <div class="products__item"><p class="item__text">eSIMPLE.<br>KAROHRMS</p></div>
-            </div> -->
             </div>
         </div>
-        </section>
+		</section>
+		
+		<section id="services__section" class="services">
+		<div class="content">
+		<div class="services__header">
+			<div class="header__item">
+				<img class="services__item-image services__item-image--large" src="images/services_tool.png" alt="">
+				<img class="services__item-image services__item-image--medium" src="images/services__header-image_medium.png" alt="">
+			</div>
+			<h2 class="services__title"><?php echo CFS()->get('title_services');  ?></h2>
+		</div>
+		<div class="services__list--small">
+			<div class="services__item--small">
+				<img class="services__item-image" src="images/services_login.png" alt="">
+				<p class="services__item-text--small">WDROŻENIA ERP, CRM, BI</p>
+			</div>
+				<div class="services__item--small">
+					<img class="services__item-image" src="images/services__group.png" alt="">
+						<p class="services__item-text--small">KONSULTING ERP, CRM, BI</p>
+				</div>
+					<div class="services__item--small">
+						<img class="services__item-image" src="images/services_book.png" alt="">
+						<p class="services__item-text--small">SZKOLENIA</p>
+					</div>
+					<div class="services__item--small">
+						<img class="services__item-image" src="images/services_speach.png" alt="">
+					<p class="services__item-text--small">DORADZTWO W ZAKRESIE INFRASTRUKTURY INFORMATYCZNEJ</p>
+					</div>
+					<div class="services__item--small services__item--small--banknote">
+						<img class="services__item-image" src="images/services_banknote.png" alt="">
+						<p class="services__item-text--small">DOFINANSOWANIE I LEASING</p>
+					</div>
+
+		</div>
+		<div class="services__list">
+	<?php $services = CFS()->get( 'services_loop');
+
+		if($services){
+
+		foreach ( $services as $service ) { ?>
+
+	<div class="services__column">
+
+			
+	<div class="services__item  services__item--login">
+		<img class="services__item-image services__item-image--login" src=<?php echo $service['service_image'] ?> alt="">
+		<p class="services__item-text"><?php echo $service['service_name']; ?></p></div>
+	<div class="services__item services__item--speach">
+		<img class="services__item-image" src=<?php echo $service['service_image_2'] ?> alt="">
+		<p class="services__item-text"><?php echo $service ['service_name_2']?><br class="br"></p></div>
+	</div>
+
+<?php	}} ?>
+<?php $services = CFS()->get( 'services_loop_3');
+
+if($services){
+
+foreach ( $services as $service ) { ?>
+
+<div class="services__column">
+
+	
+<div class="services__column services__column--mid">
+				<div class="services__item services__item--book"><img class="services__item-image" src=<?php echo $service['service_image_col_2']?> alt=""><p class="services__item-text"><?php echo $service['service_name_col_2']?></p></div>
+			</div>
+</div>
+
+<?php	}} ?>
+			
+			<?php $services = CFS()->get( 'services_loop_2');
+
+		if($services){
+
+		foreach ( $services as $service ) { ?>
+
+	<div class="services__column">
+
+			
+	<div class="services__item  services__item--login">
+		<img class="services__item-image services__item-image--login" src=<?php echo $service['service_image_col_3'] ?> alt="">
+		<p class="services__item-text"><?php echo $service['service_name_col_3']; ?></p></div>
+	<div class="services__item services__item--speach">
+		<img class="services__item-image" src=<?php echo $service['service_image_2_col_3'] ?> alt="">
+		<p class="services__item-text"><?php echo $service ['service_name_2_col_3']?><br class="br"></p></div>
+	</div>
+
+<?php	}} ?>
+		</div>
+		<div class="services__description">
+			<p class="services__text"><?php echo CFS()->get('services_description'); ?><p>
+
+		</div>
+
+	</div>
+	</section>
 
     
 
