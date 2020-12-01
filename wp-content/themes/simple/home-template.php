@@ -256,6 +256,57 @@ foreach ( $services as $service ) { ?>
 	</div>
 	</section>
 
+	<section id="news__section" class="news">
+	<div class="content">
+			<div class="news__header">
+			<div class="news__image"><img class="news__image-img" src="images/news_refresh.png" alt=""></div>
+			<h2 class="news__title">Aktualności</h2>
+		 </div>
+		<div class="news__list--small">
+			<div class="news__item--small">
+			<div class="row slider">
+			   
+				<div class="item--small"><img class="item__image--small" src="images/news_climbing.png" alt=""></div>
+				<div class="item--small"><img class="item__image--small" src="images/news_tablet.png" alt=""></div>
+				<div class="item--small"><img class="item__image--small" src="images/news_worker-phone.png" alt=""></div>
+				<div class="item--small"><img class="item__image--small" src="images/news_worker.png" alt=""></div>
+			   
+			</div>
+				<p class="info__date--small">1.06.2013</p>
+				<h3 class="info__title--small">lorem ipsum.</h3>
+				<p class="info__text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
+			</div>
+		</div>
+	<div class="news__list">
+			
+		 <div class="news__slider">
+
+		 <?php $news = CFS()->get( 'news_loop');
+
+		if($news){
+
+			foreach ( $news as $new) { ?>
+
+					<div class="news__item">
+				
+				<img class="news__item-image" src=<?php echo $new['news_image'];?> alt="">
+				<div class="item__info">
+				<p class="info__date"><?php echo $new['news_date'];?></p>
+				<h3 class="info__title"><?php echo $new['news_title'];?></h3>
+				<p class="info__text"><?php echo $new['news_description'];?>
+					<hr class="info__line">
+				<a href="#" class="info__link">więcej</a>
+			</div>
+			</div>
+			
+
+<?php	}} ?>
+			
+
+		</div>
+	</div>
+	</section>
+
     
 
 
