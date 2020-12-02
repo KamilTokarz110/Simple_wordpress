@@ -9,8 +9,7 @@ Template Name: HomeTemp
 <?php get_header(); ?>
 <!-- <main class="wrapper"> -->
 <div id="main" class="main__about content">
-<?php if(have_posts()) :
-    while(have_posts()) : the_post(); ?>
+
   
             
           
@@ -277,41 +276,111 @@ foreach ( $services as $service ) { ?>
 				<p class="info__text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
 			</div>
 		</div>
-	<div class="news__list">
+		<div class="news__list">
+		
+	 		<div class="news__slider">
+
+	
+	 <?php
 			
-		 <div class="news__slider">
+			$Post = new WP_Query('cat=3');
+			
+			
 
-		 <?php $news = CFS()->get( 'news_loop');
-
-		if($news){
-
-			foreach ( $news as $new) { ?>
-
-					<div class="news__item">
-				
-				<img class="news__item-image" src=<?php echo $new['news_image'];?> alt="">
+		 if($Post->have_posts()):
+			while($Post->have_posts()) :$Post->the_post();?>
+			<div class="news__item">
+				<img class="news__item-image" src="<?php the_post_thumbnail(); ?>" />
 				<div class="item__info">
-				<p class="info__date"><?php echo $new['news_date'];?></p>
-				<h3 class="info__title"><?php echo $new['news_title'];?></h3>
-				<p class="info__text"><?php echo $new['news_description'];?>
+					<p class="info__date"><?php the_date();?></p>
+					<h3 class="info__title"><?php the_title();?></h3>
+					<p class="info__text"><?php the_content();?></p>
+					<hr class="info__line">
+					<a href="<?php the_permalink();?>" class="info__link">wiecej</a>
+				</div>
+
+			</div>
+	
+			
+	<?php endwhile;
+			endif;?>
+	</div> 
+	</div>
+
+	</div>
+
+	
+		
+	
+
+	
+</section>
+			
+			<!-- <div class="news__item"> -->
+				
+			<!-- <img class="news__item-image" src=>
+				<div class="item__info">
+				<p class="info__date">1.06.2013</p>
+				<h3 class="info__title">></h3>
+				<p class="info__text">lorem ipsum, lorem ipsum<br>
+					lorem ipsumlorem<br>
+					lorem ipsum ipsum.</p>
+					<hr class="info__line">
+					<a href="" class="info__link"></a>
+			</div>
+			</div>
+			
+			<div class="news__item">
+				<img class="news__item-image" src="images/news_tablet.png" alt="">
+				<div class="item__info">
+				<p class="info__date">1.06.2013</p>
+				<h3 class="info__title">lorem ipsum.</h3>
+				<p class="info__text">lorem ipsum, lorem ipsum<br>
+					lorem ipsumlorem<br>
+					lorem ipsum ipsum.</p>
 					<hr class="info__line">
 				<a href="#" class="info__link">więcej</a>
 			</div>
 			</div>
+			<div class="news__item">
+				<img class="news__item-image" src="images/news_worker-phone.png" alt="">
+				<div class="item__info">
+				<p class="info__date">1.06.2013</p>
+				<h3 class="info__title">lorem ipsum.</h3>
+				<p class="info__text">lorem ipsum, lorem ipsum<br>
+					lorem ipsumlorem<br>
+					lorem ipsum ipsum.</p>
+					
+					<hr class="info__line">
+				<a href="#" class="info__link">więcej</a>
+			</div>
+			</div>
+	
+			<div class="news__item">
+				
+				<img class="news__item-image" src="images/news_tablet.png" alt="">
+				<div class="item__info">
+				<p class="info__date">1.06.2013</p>
+				<h3 class="info__title">lorem ipsum.</h3>
+				<p class="info__text">lorem ipsum, lorem ipsum<br>
+					lorem ipsumlorem<br>
+					lorem ipsum ipsum.</p>
+					<hr class="info__line">
+				<a href="#" class="info__link">więcej</a>
+			</div>
+			</div>  -->
+		
+		
 			
 
-<?php	}} ?>
-			
-
-		</div>
+		<!-- </div>
 	</div>
-	</section>
+	</section> -->
 
     
 
 
-<?php endwhile;
-endif; ?>
+
 
 <!-- </main> -->
 <?php get_footer(); ?>

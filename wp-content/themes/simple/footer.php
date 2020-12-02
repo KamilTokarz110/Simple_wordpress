@@ -100,6 +100,8 @@ $(document).ready(function(){
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
+  responsive:unslick,
+  // centerMode:true,
   prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
       nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
 });

@@ -73,6 +73,7 @@
         &-image {
             cursor: pointer;
             // margin-left: 10px;
+            // border-radius: 50%;
 
             &--rotate {
                 color: white;
@@ -211,8 +212,12 @@
             width: 115px;
             margin: 0px 10px;
 
+
+
             .news__item-image {
                 width: 100%;
+
+
             }
 
 
