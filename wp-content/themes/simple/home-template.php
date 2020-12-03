@@ -283,18 +283,19 @@ foreach ( $services as $service ) { ?>
 	
 	 <?php
 			
-			$Post = new WP_Query('cat=3');
+			$Post = new WP_Query('type=post');
 			
 			
 
 		 if($Post->have_posts()):
 			while($Post->have_posts()) :$Post->the_post();?>
 			<div class="news__item">
-				<img class="news__item-image" src="<?php the_post_thumbnail(); ?>" />
+			
+				<img class = "news__item-image" src="<?php echo the_post_thumbnail(); ?>" >
 				<div class="item__info">
-					<p class="info__date"><?php the_date();?></p>
+					<p class="info__date"><?php echo get_the_date('d.m.Y');?></p>
 					<h3 class="info__title"><?php the_title();?></h3>
-					<p class="info__text"><?php the_content();?></p>
+					<p class="info__text"><?php echo get_the_excerpt();?></p>
 					<hr class="info__line">
 					<a href="<?php the_permalink();?>" class="info__link">wiecej</a>
 				</div>
