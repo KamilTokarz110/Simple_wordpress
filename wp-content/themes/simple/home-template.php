@@ -392,14 +392,17 @@ foreach ( $branches as $branch ) { ?>
 			<div class="contact__submit">
 				<div class="submit__send">
 					<p class="submit__title"><?php echo CFS()->get('form_title');?></p>
+
+					
 					<form id="form_1" class="send__form" action="#">
-						
+					<?php echo do_shortcode('[contact-form-7 id="132" title="Contact Form"]');?>
+					<!-- <div class="send__form">
 						<input class="form__input form__input--name" placeholder="Imię&Nazwisko" type="text">
 						<input class="form__input form__input--email" placeholder="Email" type="email">
 						<input class="form__input form__input--number" placeholder="Numer telefonu" type="tel">
 						<input class="form__input form__input--topic" placeholder="Temat" type="text">
 						<textarea class="form__text-area" placeholder="Treść zapytania" name="text-area" id="text-area" cols="30" rows="10"></textarea>
-				<div class="form__checkboxes">
+					<div class="form__checkboxes">
 						<p class="checkboxes__text">Wybierz rodzaj prezentacji</p>
 					 <div class="item">
 						<input class="form__checkbox" id="live" name="live" type="checkbox">
@@ -411,8 +414,8 @@ foreach ( $branches as $branch ) { ?>
 					</div>
 						
 					</div>
-					<button type="submit" form="form_1" value="Submit" class="form__button">Wyślij</button>
-
+					<button type="submit" form="form_1" value="Submit" class="form__button">Wyślij</button>  -->
+					<!-- </div> -->
 					</form>
 				</div>
 				<div class="submit__social">

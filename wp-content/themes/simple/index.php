@@ -400,9 +400,9 @@
 						<input class="form__checkbox" id="multimedial" name="miltimedial" type="checkbox">
 						<label class="form__checkbox-label" for="multimedial">Multimedialna</label>
 					</div>
-						
-					</div>
 					<button type="submit" form="form_1" value="Submit" class="form__button">Wyślij</button>
+					</div>
+					
 
 					</form>
 				</div>
