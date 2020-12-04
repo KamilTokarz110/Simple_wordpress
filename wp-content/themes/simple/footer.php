@@ -54,6 +54,16 @@ $(document).ready(function(){
     //   arrows: false,
     });
   });
+  // $(document).ready(function(){
+  //   $('.contact__branch').slick({
+  //     prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
+  //     nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
+  //     slidesToShow:3,
+  //     // slidesToScroll:1,
+  //     // infinite:true,
+  //   //   arrows: false,
+  //   });
+  // });
   $(document).ready(function(){
     $('.footer__slider--small').slick({
         prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/footer_arrow_main-color_320_left.png'>",

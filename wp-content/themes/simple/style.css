@@ -1931,21 +1931,21 @@ html {
 }
 
 .contact__branch {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 270px;
-	border-bottom: dotted 2px white;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	height: 270px !important;
+	border-bottom: dotted 2px white !important;
 }
 
 .contact__branch .branch__item {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 181px;
-	font-size: 1.7rem;
-	font-weight: 300;
-	color: white;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: space-between !important;
+	height: 181px !important;
+	font-size: 1.7rem !important;
+	font-weight: 300 !important;
+	color: white !important;
 }
 
 .contact .submit__return {

@@ -7,7 +7,7 @@ Template Name: HomeTemp
 */
 ?>
 <?php get_header(); ?>
-<!-- <main class="wrapper"> -->
+
 <div id="main" class="main__about content">
 
   
@@ -224,9 +224,9 @@ foreach ( $services as $service ) { ?>
 <div class="services__column services__column--mid">
 				<div class="services__item services__item--book"><img class="services__item-image" src=<?php echo $service['service_image_col_2']?> alt=""><p class="services__item-text"><?php echo $service['service_name_col_2']?></p></div>
 			</div>
-</div>
+	</div>
 
-<?php	}} ?>
+	<?php	}} ?>
 			
 			<?php $services = CFS()->get( 'services_loop_2');
 
@@ -242,10 +242,10 @@ foreach ( $services as $service ) { ?>
 		<p class="services__item-text"><?php echo $service['service_name_col_3']; ?></p></div>
 	<div class="services__item services__item--speach">
 		<img class="services__item-image" src=<?php echo $service['service_image_2_col_3'] ?> alt="">
-		<p class="services__item-text"><?php echo $service ['service_name_2_col_3']?><br class="br"></p></div>
+		<p class="services__item-text"><?php echo $service['service_name_2_col_3']?><br class="br"></p></div>
 	</div>
 
-<?php	}} ?>
+	<?php	}} ?>
 		</div>
 		<div class="services__description">
 			<p class="services__text"><?php echo CFS()->get('services_description'); ?><p>
@@ -255,11 +255,13 @@ foreach ( $services as $service ) { ?>
 	</div>
 	</section>
 
-	<section id="news__section" class="news">
+<section id="news__section" class="news">
 	<div class="content">
-			<div class="news__header">
-			<div class="news__image"><img class="news__image-img" src="images/news_refresh.png" alt=""></div>
-			<h2 class="news__title">Aktualności</h2>
+		<div class="news__header">
+			<div class="news__image">
+				<img class="news__image-img" src="images/news_refresh.png" alt="">
+			</div>
+			<h2 class="news__title"><?php echo CFS()->get('title_news');?></h2>
 		 </div>
 		<div class="news__list--small">
 			<div class="news__item--small">
@@ -281,15 +283,15 @@ foreach ( $services as $service ) { ?>
 	 		<div class="news__slider">
 
 	
-	 <?php
+	 			<?php
 			
-			$Post = new WP_Query('type=post');
+				$Post = new WP_Query('type=post');
 			
 			
 
-		 if($Post->have_posts()):
-			while($Post->have_posts()) :$Post->the_post();?>
-			<div class="news__item">
+		 		if($Post->have_posts()):
+				while($Post->have_posts()) :$Post->the_post();?>
+				<div class="news__item">
 			
 				<img class = "news__item-image" src="<?php echo the_post_thumbnail(); ?>" >
 				<div class="item__info">
@@ -301,87 +303,150 @@ foreach ( $services as $service ) { ?>
 				</div>
 
 			</div>
-	
-			
-	<?php endwhile;
-			endif;?>
-	</div> 
-	</div>
-
-	</div>
-
-	
 		
-	
-
-	
-</section>
 			
-			<!-- <div class="news__item"> -->
+			<?php endwhile;
 				
-			<!-- <img class="news__item-image" src=>
-				<div class="item__info">
-				<p class="info__date">1.06.2013</p>
-				<h3 class="info__title">></h3>
-				<p class="info__text">lorem ipsum, lorem ipsum<br>
-					lorem ipsumlorem<br>
-					lorem ipsum ipsum.</p>
-					<hr class="info__line">
-					<a href="" class="info__link"></a>
+			endif;
+			wp_reset_postdata();?>
+			
+			</div> 
 			</div>
+			</section>
+
+			
+			<section id="contact__section" class="contact">
+			<div class="content content--contact">
+			<div class="contact__header">
+				<div class="contact__image"><img class="contact__image-img" src="images/contact_user.png" alt=""></div>
+				<h2 class="contact__title"><?php echo CFS()->get('title_contact');?></h2>
+			</div>
+			<div class="contact__slider--small">
+			<?php $branches = CFS()->get('title_loop');
+
+if($branches){
+
+foreach ( $branches as $branch ) { ?>
+				
+				<div class="branch__item--small">
+					<p class="branch__name"><?php echo $branch['branch_name'];?></p>
+					<p class="branch__address"><?php echo $branch['branch_address'];?></p>
+					<p class="branch__phone"><?php echo $branch['branch_phone'];?></p>
+					<p class="branch__fax"><?php echo $branch['branch_fax'];?></p>
+					<p class="branch__email"><?php echo $branch['branch_email'];?></p>
+				</div>
+<?php }}?>
+				<!-- <div class="branch__item--small">
+					<p class="branch__name">SIMPLE S.A.- Ośrodek Badawczo<br>-Rozwojowy Lublin</p>
+					<p class="branch__address">ul. Wolska 11A/4<br>20-411 Lublin</p>
+					<p class="branch__phone">tel. kom: +48 696 001 286</p>
+					<p class="branch__email">lublin@simple.com.pl</p>
+				</div>
+				<div class="branch__item--small">
+					<p class="branch__name">SIMPLE S.A. - oddział Rzeszów</p>
+					<p class="branch__address">ul. Rejtana 53A<br>35-326 Rzeszów</p>
+					<p class="branch__phone">tel. kom.: +48 696 001 235</p>
+					<p class="branch__fax">fax.: (17) 865 42 41</p>
+					<p class="branch__email">rzeszow@simple.com.pl</p>
+				</div>
+				 -->
+			</div>
+
+
+
+			
+		
+		 
+			<div class="contact__branch">
+			
+			<?php $branches = CFS()->get('title_loop');
+
+   if($branches){
+
+foreach ( $branches as $branch ) { ?>
+
+				<div class="branch__item">
+					<p class="branch__name"><?php echo $branch['branch_name'];?></p>
+					<p class="branch__address"><?php echo $branch['branch_address'];?></p>
+					<div class="wrap">
+					<p class="branch__phone"><?php echo $branch['branch_phone'];?></p>
+					<p class="branch__fax"><?php echo $branch['branch_fax'];?></p>
+					</div>
+					<p class="branch__email"><?php echo $branch['branch_email'];?></p>
+				</div>
+<?php  }}?>
+
 			</div>
 			
-			<div class="news__item">
-				<img class="news__item-image" src="images/news_tablet.png" alt="">
-				<div class="item__info">
-				<p class="info__date">1.06.2013</p>
-				<h3 class="info__title">lorem ipsum.</h3>
-				<p class="info__text">lorem ipsum, lorem ipsum<br>
-					lorem ipsumlorem<br>
-					lorem ipsum ipsum.</p>
-					<hr class="info__line">
-				<a href="#" class="info__link">więcej</a>
+			<div class="contact__submit contact__submit--medium">
+				<div class="submit__item">
+					<p class="submit__title"><span class="text__span">Zadaj pytanie</span> </p>
+					<p class="submit__text"><?php echo CFS()->get('job_interview_email_1')?></p>
+				</div>
+				<div class="submit__item">
+					<p class="submit__title"><span class="text__span">Praca</span> </p>
+					<p class="submit__text submit__text--medium"><?php echo CFS()->get('job_description')?><br>
+					<?php echo CFS()->get('job_interview_email_1')?>    </p>
+				</div>
 			</div>
+			<div class="contact__submit">
+				<div class="submit__send">
+					<p class="submit__title"><?php echo CFS()->get('form_title');?></p>
+					<form id="form_1" class="send__form" action="#">
+						
+						<input class="form__input form__input--name" placeholder="Imię&Nazwisko" type="text">
+						<input class="form__input form__input--email" placeholder="Email" type="email">
+						<input class="form__input form__input--number" placeholder="Numer telefonu" type="tel">
+						<input class="form__input form__input--topic" placeholder="Temat" type="text">
+						<textarea class="form__text-area" placeholder="Treść zapytania" name="text-area" id="text-area" cols="30" rows="10"></textarea>
+				<div class="form__checkboxes">
+						<p class="checkboxes__text">Wybierz rodzaj prezentacji</p>
+					 <div class="item">
+						<input class="form__checkbox" id="live" name="live" type="checkbox">
+						<label class="form__checkbox-label" for="live">W siedzibie</label>
+					</div>
+					<div class="item item--right">
+						<input class="form__checkbox" id="multimedial" name="miltimedial" type="checkbox">
+						<label class="form__checkbox-label" for="multimedial">Multimedialna</label>
+					</div>
+						
+					</div>
+					<button type="submit" form="form_1" value="Submit" class="form__button">Wyślij</button>
+
+					</form>
+				</div>
+				<div class="submit__social">
+					<p class="social__title"><?php echo CFS()->get('social_title');?></p>
+					<div class="social__image"><img src="images/social_facebook.png" alt=""></div>
+					<div class="social__image"><img src="images/social_twitter.png" alt=""></div>
+					<div class="social__image"><img src="images/social_google.png" alt=""></div>
+					<div class="social__image"><img src="images/social_linkedin.png" alt=""></div>
+				</div>
+				<div class="submit__info">
+					<p class = "info__title"><?php echo CFS()->get('job_title');?></p>
+					<p class="info__title info__title--medium"><?php echo CFS()->get('job_title');?></p>
+					<div class="wrap">
+					<p class="info__text"><?php echo CFS()->get('job_description');?></p>
+					<p class="info__text info__text--medium"><?php echo CFS()->get('job_interview_email_1')?></p>
+					<p class="info__email"><?php echo CFS()->get('job_interview_email_2')?></p>
+					<p class="info__text">Zobacz nasze oferty...</p>
+				</div>
+				<div class="content">
+				<div class="submit__info submit__info--medium">
+					<p class = "info__title"><?php echo CFS()->get('job_title');?></p>
+					<p class="info__text "><?php echo CFS()->get('job_description');?> <?php echo CFS()->get('job_interview_email_1')?> </p>
+				</div>
+			
 			</div>
-			<div class="news__item">
-				<img class="news__item-image" src="images/news_worker-phone.png" alt="">
-				<div class="item__info">
-				<p class="info__date">1.06.2013</p>
-				<h3 class="info__title">lorem ipsum.</h3>
-				<p class="info__text">lorem ipsum, lorem ipsum<br>
-					lorem ipsumlorem<br>
-					lorem ipsum ipsum.</p>
 					
-					<hr class="info__line">
-				<a href="#" class="info__link">więcej</a>
 			</div>
-			</div>
-	
-			<div class="news__item">
 				
-				<img class="news__item-image" src="images/news_tablet.png" alt="">
-				<div class="item__info">
-				<p class="info__date">1.06.2013</p>
-				<h3 class="info__title">lorem ipsum.</h3>
-				<p class="info__text">lorem ipsum, lorem ipsum<br>
-					lorem ipsumlorem<br>
-					lorem ipsum ipsum.</p>
-					<hr class="info__line">
-				<a href="#" class="info__link">więcej</a>
-			</div>
-			</div>  -->
-		
-		
-			
-
-		<!-- </div>
+		 </div>
+		<div class="submit__return">
+			<a class="return__link" href="#main__section">Powrót na górę strony</a>
+		</div>
 	</div>
-	</section> -->
+		
+</section>
 
-    
-
-
-
-
-<!-- </main> -->
-<?php get_footer(); ?>
+<?php get_footer();
