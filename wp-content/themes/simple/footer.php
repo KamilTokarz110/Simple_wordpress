@@ -75,8 +75,11 @@ $(document).ready(function(){
   });
   $(document).ready(function(){
     $('.slider').slick({
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/footer_arrow_main-color_320_left.png'>",
-      nextArrow:"<img class='a-right control-c next slick-next' src='/images/footer_arrow_main-color_320_right.png'>",
+      prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
+      infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
     });
   });
   $(document).ready(function(){

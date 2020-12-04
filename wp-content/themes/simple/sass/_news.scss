@@ -72,8 +72,9 @@
 
         &-image {
             cursor: pointer;
-            // margin-left: 10px;
-            // border-radius: 50%;
+            width: 190px;
+            height: 190px;
+            clip-path: circle();
 
             &--rotate {
                 color: white;
@@ -348,19 +349,23 @@
 
 
 
-                    .item--small {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                    // .item--small {
+                    //     display: flex;
+                    //     align-items: center;
+                    //     justify-content: center;
 
 
-                        .item__image--small {
+                    .item__image--small {
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+                        width: 100px;
+                        height: 100px;
+                        clip-path: circle();
 
-                            width: 164px;
-                            height: 164px;
-
-                        }
                     }
+
+                    //   }
 
                     .news__item--arrow--left {
                         margin-right: 40px;

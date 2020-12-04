@@ -3,7 +3,7 @@
     // flex-direction: column;
     // align-items: center;
     // justify-content: center;
-    height: 978px;
+    min-height: 978px;
     width: 100%;
     background-color: $main-color;
 
@@ -13,7 +13,7 @@
 
     &__header {
         display: flex;
-        height: 160px;
+        min-height: 160px;
         align-items: center;
         justify-content: center;
         border-bottom: dotted 2px white;
@@ -46,7 +46,7 @@
         position: relative;
         flex: 1;
         display: flex;
-        height: 100%;
+        min-height: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -107,7 +107,7 @@
     }
 
     &__description {
-        height: 331px;
+        min-height: 331px;
         // background-color: chartreuse;
     }
 
@@ -135,7 +135,7 @@
 @media screen and (max-width:$medium-device) {
     .services {
         display: flex;
-        height: 445px;
+        min-height: 445px;
         width: 100%;
         background-color: $main-color;
 
@@ -146,7 +146,7 @@
 
         &__header {
 
-            height: 87px;
+            min-height: 87px;
             border-bottom: dotted 1px white;
 
 

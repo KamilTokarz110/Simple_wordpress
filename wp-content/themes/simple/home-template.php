@@ -263,22 +263,36 @@ foreach ( $services as $service ) { ?>
 			</div>
 			<h2 class="news__title"><?php echo CFS()->get('title_news');?></h2>
 		 </div>
-		<div class="news__list--small">
+		<div class="news__list--small slider">
+			<?php
+			
+			$smallPost = new WP_Query('type=post');
+		
+		
+
+			 if($smallPost->have_posts()):
+			while($smallPost->have_posts()) :$smallPost->the_post();?>
 			<div class="news__item--small">
-			<div class="row slider">
+			
+			
+			<div class="row">
 			   
-				<div class="item--small"><img class="item__image--small" src="images/news_climbing.png" alt=""></div>
-				<div class="item--small"><img class="item__image--small" src="images/news_tablet.png" alt=""></div>
-				<div class="item--small"><img class="item__image--small" src="images/news_worker-phone.png" alt=""></div>
-				<div class="item--small"><img class="item__image--small" src="images/news_worker.png" alt=""></div>
+				<div class="item--small"><img class="item__image--small" src="<?php echo the_post_thumbnail();?>" alt=""></div>
+				
 			   
 			</div>
-				<p class="info__date--small">1.06.2013</p>
-				<h3 class="info__title--small">lorem ipsum.</h3>
-				<p class="info__text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
+				<p class="info__date--small"><?php echo get_the_date('d.m.Y');?></p>
+				<h3 class="info__title--small"><?php the_title();?></h3>
+				<p class="info__text--small"><?php echo get_the_excerpt();?></p>
 			</div>
+				<?php endwhile;
+				
+				endif;
+				wp_reset_postdata();?>
+
 		</div>
-		<div class="news__list">
+			
+			<div class="news__list">
 		
 	 		<div class="news__slider">
 
