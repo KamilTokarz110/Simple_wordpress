@@ -262,71 +262,52 @@ foreach ( $services as $service ) { ?>
 				<img class="news__image-img" src="images/news_refresh.png" alt="">
 			</div>
 			<h2 class="news__title"><?php echo CFS()->get('title_news');?></h2>
-		 </div>
-		<div class="news__list--small slider">
-			<?php
-			
-			$smallPost = new WP_Query('type=post');
-		
-		
-
-			 if($smallPost->have_posts()):
-			while($smallPost->have_posts()) :$smallPost->the_post();?>
-			<div class="news__item--small">
-			
-			
-			<div class="row">
-			   
-				<div class="item--small"><img class="item__image--small" src="<?php echo the_post_thumbnail();?>" alt=""></div>
-				
-			   
-			</div>
-				<p class="info__date--small"><?php echo get_the_date('d.m.Y');?></p>
-				<h3 class="info__title--small"><?php the_title();?></h3>
-				<p class="info__text--small"><?php echo get_the_excerpt();?></p>
-			</div>
-				<?php endwhile;
-				
-				endif;
-				wp_reset_postdata();?>
-
 		</div>
+		 
 			
-			<div class="news__list">
+			
 		
+		
+
+
+					<?php
+			
+						$Post = new WP_Query('type=post'); ?>
+
+		<div class="news__list">
+						<?php if($Post->have_posts()): ?>
+					
 	 		<div class="news__slider">
 
 	
-	 			<?php
+	 		
 			
-				$Post = new WP_Query('type=post');
-			
-			
+				<?php while($Post->have_posts()) :$Post->the_post();?>
 
-		 		if($Post->have_posts()):
-				while($Post->have_posts()) :$Post->the_post();?>
-				<div class="news__item">
+		 			
+				<div class="news__item ">
 			
-				<img class = "news__item-image" src="<?php echo the_post_thumbnail(); ?>" >
-				<div class="item__info">
-					<p class="info__date"><?php echo get_the_date('d.m.Y');?></p>
-					<h3 class="info__title"><?php the_title();?></h3>
-					<p class="info__text"><?php echo get_the_excerpt();?></p>
-					<hr class="info__line">
-					<a href="<?php the_permalink();?>" class="info__link">wiecej</a>
+					<img class = "news__item-image " src="<?php echo the_post_thumbnail(); ?>" >
+					<div class="item__info ">
+						<p class="info__date "><?php echo get_the_date('d.m.Y');?></p>
+						<h3 class="info__title "><?php the_title();?></h3>
+						<p class="info__text"><?php echo get_the_excerpt();?></p>
+						<hr class="info__line">
+						<a href="<?php the_permalink();?>" class="info__link">wiecej</a>
+					</div>
+
 				</div>
-
-			</div>
 		
 			
-			<?php endwhile;
-				
-			endif;
-			wp_reset_postdata();?>
+				<?php endwhile; ?>
 			
+				<?php endif;
+				wp_reset_postdata();?>
 			</div> 
-			</div>
-			</section>
+			
+		</div>
+	</div>
+</section>
 
 			
 			<section id="contact__section" class="contact">

@@ -70,11 +70,12 @@
 
 
 
+
         &-image {
-            cursor: pointer;
             width: 190px;
             height: 190px;
             clip-path: circle();
+
 
             &--rotate {
                 color: white;
@@ -82,7 +83,9 @@
                 transform: rotate(180deg);
 
             }
+
         }
+
 
         .item__info {
             margin-top: 32px;
@@ -145,16 +148,12 @@
 
         }
 
-        .news__item-image {
-            max-width: 100%;
-            max-height: 100%;
-        }
 
     }
 
-    .news__list--small {
-        display: none;
-    }
+    // .news__list--small {
+    //     display: none;
+    // }
 }
 
 @media screen and (max-width:$medium-device) {
@@ -213,12 +212,10 @@
             width: 115px;
             margin: 0px 10px;
 
-
-
             .news__item-image {
-                width: 100%;
-
-
+                width: 190px;
+                height: 190px;
+                clip-path: circle();
             }
 
 
@@ -245,7 +242,7 @@
                 }
 
                 .info__text {
-                    display: none;
+
                     padding-bottom: 10px;
                 }
 
@@ -314,98 +311,103 @@
 
         &__list {
 
-            display: none;
-
-        }
-
-        .news__list--small {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: center;
             width: 100%;
             height: 387px;
 
 
+            .news__slider {
+                display: flex;
+                // flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                // background-color: darkblue;
+                // margin-bottom: 150px;
+                // margin-right: 50px;
 
-            .news__item--small {
+
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 387px;
+            margin-top: 0px;
+            // background-color: green;
+            color: $main-color;
+
+
+
+
+            .news__item-image {
+                margin: 0 auto;
+                width: 165px;
+                height: 165px;
+                clip-path: circle();
+
+
+
+            }
+
+            .item__info {
+                margin-top: 0px;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-start;
                 align-items: center;
-                justify-content: space-evenly;
+                flex-basis: 185px;
                 width: 100%;
-                height: 370px;
-                margin-top: 25px;
-
-                color: $main-color;
 
 
-                .row {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 164px;
-
-
-
-                    // .item--small {
-                    //     display: flex;
-                    //     align-items: center;
-                    //     justify-content: center;
-
-
-                    .item__image--small {
-                        // display: flex;
-                        // align-items: center;
-                        // justify-content: center;
-                        width: 100px;
-                        height: 100px;
-                        clip-path: circle();
-
-                    }
-
-                    //   }
-
-                    .news__item--arrow--left {
-                        margin-right: 40px;
-
-                        width: 21px;
-                        height: 34px;
-                    }
-
-                    .news__item--arrow--right {
-                        margin-left: 40px;
-                        width: 21px;
-                        height: 34px;
-
-                        transform: rotate(180deg);
-
-
-                    }
-
-                }
-
-
-                .info__title--small {
+                .info__title {
                     text-transform: uppercase;
                     font-size: 1.6rem;
                     margin-top: 10px;
                 }
 
-                .info__date--small {
+                .info__link {
+
+
+
+                    display: none;
+                }
+
+                .info__text {
+                    text-align: center;
+                    width: 288px;
+                    height: 110px;
+                    font-size: $small-font-size;
+
+                }
+
+                .info__date {
                     font-size: 1.6rem;
                     margin-top: 20px;
                 }
 
-                .info__text--small {
-                    width: 288px;
-                    height: 110px;
-                    font-size: $small-font-size;
+                .info__line {
+                    display: none;
                 }
 
-
             }
+
+
+
+
+
+
+
         }
+
+
     }
 }

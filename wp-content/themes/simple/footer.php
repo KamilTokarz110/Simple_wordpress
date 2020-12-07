@@ -48,8 +48,8 @@
 
 $(document).ready(function(){
     $('.contact__slider--small').slick({
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/contact_arrow_320_left.png'>",
-      nextArrow:"<img class='a-right control-c next slick-next' src='/images/contact_arrow_320_slider.png'>",
+      prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
       slidesToShow:1,
     //   arrows: false,
     });
@@ -73,15 +73,15 @@ $(document).ready(function(){
   slidesToScroll: 1,
     });
   });
-  $(document).ready(function(){
-    $('.slider').slick({
-      prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
-      nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
-      infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-    });
-  });
+  // $(document).ready(function(){
+  //   $('.news__slider--small').slick({
+  //     prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+  //     nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+  //     infinite: true,
+  // slidesToShow: 1,
+  // slidesToScroll: 1,
+  //   });
+  // });
   $(document).ready(function(){
     $('.main__about__slider').slick({
         prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/footer_arrow_main-color_320_left.png'>",
@@ -110,13 +110,23 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $('.news__slider').slick({
-  infinite: true,
+//   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  // responsive:unslick,
-  // centerMode:true,
+  
+ 
+
   prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
       nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+      mobileFirst: false,
+  responsive: [{
+    breakpoint: 786,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // centerMode: false
+    }
+  }]
 });
 });
   
