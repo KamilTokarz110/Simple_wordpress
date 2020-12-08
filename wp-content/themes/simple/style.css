@@ -1768,8 +1768,8 @@ html {
 		margin: 0px 10px;
 	}
 	.news__item .news__item-image {
-		width: 190px;
-		height: 190px;
+		width: 112px;
+		height: 112px;
 		clip-path: circle();
 	}
 	.news__item .item__info {
@@ -1789,6 +1789,7 @@ html {
 		text-decoration: none;
 	}
 	.news__item .item__info .info__text {
+		display: none;
 		padding-bottom: 10px;
 	}
 	.news__item .item__info .info__line {
