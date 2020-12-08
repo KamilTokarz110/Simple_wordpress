@@ -48,40 +48,23 @@
 
 $(document).ready(function(){
     $('.contact__slider--small').slick({
-      prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
-      nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='../Simple/images/contact_arrow_320_left.png'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='../Simple/images/contact_arrow_320_slider.png'>",
       slidesToShow:1,
-    //   arrows: false,
+    
     });
   });
-  // $(document).ready(function(){
-  //   $('.contact__branch').slick({
-  //     prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
-  //     nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
-  //     slidesToShow:3,
-  //     // slidesToScroll:1,
-  //     // infinite:true,
-  //   //   arrows: false,
-  //   });
-  // });
   $(document).ready(function(){
     $('.footer__slider--small').slick({
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/footer_arrow_main-color_320_left.png'>",
-      nextArrow:"<img class='a-right control-c next slick-next' src='/images/footer_arrow_main-color_320_right.png'>",
+       
+  prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
       infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
     });
   });
-  // $(document).ready(function(){
-  //   $('.news__slider--small').slick({
-  //     prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
-  //     nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
-  //     infinite: true,
-  // slidesToShow: 1,
-  // slidesToScroll: 1,
-  //   });
-  // });
+
   $(document).ready(function(){
     $('.main__about__slider').slick({
         prevArrow:"<img class='a-left control-c prev slick-prev' src='/images/footer_arrow_main-color_320_left.png'>",
@@ -116,20 +99,30 @@ $(document).ready(function(){
   
  
 
-  prevArrow:'<div class="news__item news__item--arrow news__item--arrow--left"><img class="news__item-image news__item-image--rotate news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
-      nextArrow:'<div class="news__item news__item--arrow news__item--arrow--right"><img class="news__item-image news__item-image--arrow" src="images/news_arrow.png" alt=""></div>',
+  prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
       mobileFirst: false,
-  responsive: [{
+  responsive: [
+    {
     breakpoint: 786,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
       // centerMode: false
     }
-  }]
-});
-});
+    
+  },
+  {
+  breakpoint: 1000,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+    }
+  }
+  ]
   
+});
+});
   
 
 </script>

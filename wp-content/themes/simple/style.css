@@ -262,7 +262,6 @@ html {
 
 @media (max-width: 1000px) {
 	.main__header .menu__content .menu__logo__image {
-		background-image: url(../images/main_simple_768.png);
 		background-size: cover;
 		width: 80%;
 	}
@@ -1802,10 +1801,14 @@ html {
 		height: 25px;
 	}
 	.news__item--arrow--left {
+		width: 16px;
+		height: 25px;
 		left: -48px;
 		top: 40%;
 	}
 	.news__item--arrow--right {
+		width: 16px;
+		height: 25px;
 		right: -48px;
 		top: 40%;
 	}

@@ -132,17 +132,15 @@ foreach ( $industriesCol3 as $field ) { ?>
             <div class="products__description"><p class="products__text"><?php echo CFS()->get('description_col_1');?></p>
             </div>
             <div class="products__list--small">
-                <div class="products__item--small"><p class="item__text--small">WMS</p> </div>
-                <div class="products__item--small"><p class="item__text--small">SIMPLE.ERP</p></div>
-                <div class="products__item--small"><p class="item__text--small">SIMPLE. SPRINT</p></div>
-                <div class="products__item--small"><p class="item__text--small">SIMPLE.CRM</p></div>
-                <div class="products__item--small"><p class="item__text--small">MICROSOFT DYNAMICS<br> CRM 2011</p></div>
-                <div class="products__item--small"><p class="item__text--small">OBIEG DOKUMENTÓW</p></div>
-                <div class="products__item--small"><p class="item__text--small">SIMPLE.BI </p></div>
-                <div class="products__item--small"><p class="item__text--small">SIMPLE.APS</p></div>
-                <div class="products__item--small"><p class="item__text--small">SIMPLE.SCM</p></div>
-                <div class="products__item--small"><p class="item__text--small">eSIMPLE.KARO HRMS</p></div>
-            </div>
+			<?php $products = CFS()->get( 'products_loop');
+
+if($products){
+
+foreach ( $products as $product ) { ?>
+                <div class="products__item--small"><p class="item__text--small"><?php echo $product['product_name'];?></p> </div>
+                 <div class="products__item--small"><p class="item__text--small"><?php echo $product['product_name_2'];?></p></div>
+			<?php	}} ?>
+			</div>
             <div class="products__list">
 			<?php $products = CFS()->get( 'products_loop');
 
@@ -171,15 +169,23 @@ foreach ( $products as $product ) { ?>
 			<h2 class="services__title"><?php echo CFS()->get('title_services');  ?></h2>
 		</div>
 		<div class="services__list--small">
+		<?php $services = CFS()->get( 'services_loop');
+
+if($services){
+
+foreach ( $services as $service ) { ?>
+
 			<div class="services__item--small">
-				<img class="services__item-image" src="images/services_login.png" alt="">
-				<p class="services__item-text--small">WDROŻENIA ERP, CRM, BI</p>
+				<img class="services__item-image" src=<?php echo $service['service_image']; ?> alt="">
+				<p class="services__item-text--small"><?php echo $service['service_name']; ?></p>
 			</div>
+
 				<div class="services__item--small">
-					<img class="services__item-image" src="images/services__group.png" alt="">
-						<p class="services__item-text--small">KONSULTING ERP, CRM, BI</p>
+					<img class="services__item-image" src=<?php echo $service['service_image_2']; ?> alt="">
+						<p class="services__item-text--small"><?php echo $service['service_name_2']; ?></p>
 				</div>
-					<div class="services__item--small">
+				<?php }}?>
+					<!-- <div class="services__item--small">
 						<img class="services__item-image" src="images/services_book.png" alt="">
 						<p class="services__item-text--small">SZKOLENIA</p>
 					</div>
@@ -190,7 +196,7 @@ foreach ( $products as $product ) { ?>
 					<div class="services__item--small services__item--small--banknote">
 						<img class="services__item-image" src="images/services_banknote.png" alt="">
 						<p class="services__item-text--small">DOFINANSOWANIE I LEASING</p>
-					</div>
+					</div> -->
 
 		</div>
 		<div class="services__list">
@@ -287,7 +293,7 @@ foreach ( $services as $service ) { ?>
 		 			
 				<div class="news__item ">
 			
-					<img class = "news__item-image " src="<?php echo the_post_thumbnail(); ?>" >
+					<a href="<?php the_permalink();?>"><img class = "news__item-image " src="<?php echo the_post_thumbnail(); ?>"></a>
 					<div class="item__info ">
 						<p class="info__date "><?php echo get_the_date('d.m.Y');?></p>
 						<h3 class="info__title "><?php the_title();?></h3>
