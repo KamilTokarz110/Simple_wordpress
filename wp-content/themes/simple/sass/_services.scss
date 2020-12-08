@@ -263,7 +263,7 @@
 @media screen and (max-width:$small-device) {
     .services {
 
-        height: 460px;
+        min-height: 460px;
         width: 100%;
 
         &__header {

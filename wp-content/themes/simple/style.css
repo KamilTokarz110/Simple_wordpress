@@ -1557,7 +1557,7 @@ html {
 
 @media screen and (max-width: 786px) {
 	.services {
-		height: 460px;
+		min-height: 460px;
 		width: 100%;
 	}
 	.services__header {
@@ -1885,6 +1885,7 @@ html {
 		display: none;
 	}
 	.news__item .item__info .info__text {
+		display: block;
 		text-align: center;
 		width: 288px;
 		height: 110px;

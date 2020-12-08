@@ -166,9 +166,10 @@ foreach ( $products as $product ) { ?>
 				<img class="services__item-image services__item-image--large" src="images/services_tool.png" alt="">
 				<img class="services__item-image services__item-image--medium" src="images/services__header-image_medium.png" alt="">
 			</div>
-			<h2 class="services__title"><?php echo CFS()->get('title_services');  ?></h2>
+			<h2 class="services__title"><?php echo CFS()->get('title_services');?></h2>
 		</div>
 		<div class="services__list--small">
+
 		<?php $services = CFS()->get( 'services_loop');
 
 if($services){
@@ -395,8 +396,8 @@ foreach ( $branches as $branch ) { ?>
 					<p class="submit__title"><?php echo CFS()->get('form_title');?></p>
 
 					
-					<form id="form_1" class="send__form" action="#">
-					<?php echo do_shortcode('[contact-form-7 id="132" title="Contact Form"]');?>
+					<!-- <form id="form_1" class="send__form" action=""> -->
+					<?php echo do_shortcode('[contact-form-7 id="132" title="Untitled html_id="form_1" html_class="send__form""]');?>
 					<!-- <div class="send__form">
 						<input class="form__input form__input--name" placeholder="Imię&Nazwisko" type="text">
 						<input class="form__input form__input--email" placeholder="Email" type="email">
@@ -417,7 +418,7 @@ foreach ( $branches as $branch ) { ?>
 					</div>
 					<button type="submit" form="form_1" value="Submit" class="form__button">Wyślij</button>  -->
 					<!-- </div> -->
-					</form>
+					<!-- </form> -->
 				</div>
 				<div class="submit__social">
 					<p class="social__title"><?php echo CFS()->get('social_title');?></p>
