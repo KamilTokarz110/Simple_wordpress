@@ -397,7 +397,7 @@ foreach ( $branches as $branch ) { ?>
 
 					
 					<!-- <form id="form_1" class="send__form" action=""> -->
-					<?php echo do_shortcode('[contact-form-7 id="132" title="Untitled html_id="form_1" html_class="send__form""]');?>
+					<?php echo do_shortcode('[contact-form-7 id="132" title="Untitled html_id="form_1" html_class="send__form"]');?>
 					<!-- <div class="send__form">
 						<input class="form__input form__input--name" placeholder="Imię&Nazwisko" type="text">
 						<input class="form__input form__input--email" placeholder="Email" type="email">
