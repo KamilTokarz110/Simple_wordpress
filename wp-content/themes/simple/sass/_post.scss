@@ -59,16 +59,65 @@
         font-weight: 700;
     }
 
-    &__content {
+    .article {
         width: 100%;
         min-height: 1125px;
-        background-color: yellow;
+        // background-color: yellow;
 
-        .contnet__wrapper {
+        .main-article {
+
+            // flex-grow: 1;
             padding-top: 45px;
             width: 100%;
-            height: 100%;
-            background-color: gray;
+            min-height: 1125px;
+            // background-color: gray;
+            column-count: 2;
+            column-width: 481px;
+            column-gap: 36px;
+            // column-fill: balance;
+
+
+
+            &__title {
+                column-span: all;
+
+                margin-bottom: 30px;
+            }
+
+            &__image {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // overflow: hidden;
+                width: 481px;
+                height: 348px;
+
+
+
+
+
+                .wp-post-image {
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+
+            &__text {
+
+                font-size: 1.7rem;
+                // column-span: all;
+                // word-break: break-all;
+                text-align: left;
+                width: 480px;
+                line-height: 20px;
+                padding: 20px 0px;
+                color: $main-color;
+                font-weight: 300;
+
+                .p {}
+
+            }
         }
     }
 

@@ -15,8 +15,9 @@ while(have_posts()) : the_post(); ?>
 
 
 <div class="wrapper">
-    
+
 <section class="post">
+
 <div class="content">
     <div class="post__header">
         <h1 class="post__title"><?php the_title(); ?></h1>
@@ -28,12 +29,15 @@ while(have_posts()) : the_post(); ?>
         </div>
 
     </div>
-    <div class="post__content">
-        <div class="content__wrapper">
-            <h2 class="content__main-title"><?php echo CFS()->get('title_main');?> - <?php echo CFS()->get('slogan_main');?></h2>
-            <div class="content__image"><?php the_post_thumbnail(); ?></div>
-            <p class="content__text"><?php the_content(); ?></p>
-        </div>
+    <div class="article">
+        <article class="main-article">
+            
+                <h2 class="main-article__title"><?php echo CFS()->get('title_main');?> - <?php echo CFS()->get('slogan_main');?></h2>
+               
+            
+            <div class="main-article__image"><?php the_post_thumbnail(); ?></div>
+            <div class="main-article__text"><?php the_content(); ?></div>
+        </article>
 
     </div>
     </div>

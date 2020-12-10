@@ -2487,17 +2487,43 @@ html {
 	font-weight: 700;
 }
 
-.post__content {
+.post .article {
 	width: 100%;
 	min-height: 1125px;
-	background-color: yellow;
 }
 
-.post__content .contnet__wrapper {
+.post .article .main-article {
 	padding-top: 45px;
 	width: 100%;
+	min-height: 1125px;
+	column-count: 2;
+	column-width: 481px;
+	column-gap: 36px;
+}
+
+.post .article .main-article__title {
+	column-span: all;
+	margin-bottom: 30px;
+}
+
+.post .article .main-article__image {
+	width: 481px;
+	height: 348px;
+}
+
+.post .article .main-article__image .wp-post-image {
+	width: 100%;
 	height: 100%;
-	background-color: gray;
+}
+
+.post .article .main-article__text {
+	font-size: 1.7rem;
+	text-align: left;
+	width: 480px;
+	line-height: 20px;
+	padding: 20px 0px;
+	color: #023A5C;
+	font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
