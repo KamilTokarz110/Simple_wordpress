@@ -46,9 +46,9 @@
                 </nav>
                 
             </div>
-            <div class="main__search">
-            <!-- <input class="main__input main__input--active" type="text"> -->
+           
+           
             <?php get_search_form(); ?>
-            <div class="main__item "><i class="item__image item__image--active fas fa-search"></i></div>
-        </div>
+           
+      
             </header>
