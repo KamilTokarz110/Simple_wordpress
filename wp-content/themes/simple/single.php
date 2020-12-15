@@ -19,6 +19,7 @@ while(have_posts()) : the_post(); ?>
 <section class="post">
 
 <div class="content">
+
     <div class="post__header">
         <h1 class="post__title"><?php the_title(); ?></h1>
         <div class="post__info">
@@ -30,6 +31,7 @@ while(have_posts()) : the_post(); ?>
 
     </div>
     <div class="article">
+    
         <article class="main-article">
             
                 <h2 class="main-article__title"><?php echo CFS()->get('title_main');?> - <?php echo CFS()->get('slogan_main');?></h2>
@@ -43,7 +45,7 @@ while(have_posts()) : the_post(); ?>
     </div>
 </section>
 </div>
-
+<?php get_sidebar();?>
 <?php endwhile;
 endif;?>
 
