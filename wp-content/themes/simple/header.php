@@ -24,6 +24,7 @@
     <!-- Add the new slick-theme.css if you want the default styling
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>> -->
     <link rel="stylesheet" href="/Simple/wp-content/themes/simple/style.css">
+    <?php wp_head();?>
 </head>
 <body>
     <div class="wrapper">

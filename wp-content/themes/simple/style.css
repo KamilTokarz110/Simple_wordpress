@@ -2526,4 +2526,59 @@ html {
 	flex-direction: row;
 }
 
+.post {
+	width: 100%;
+	background-color: white;
+}
+
+.post__item {
+	margin: 100px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+}
+
+.post__item .item__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-grow: 2;
+	height: 100%;
+	margin-left: 100px;
+}
+
+.post__item .item__info .item__image {
+	flex-grow: 1;
+}
+
+.post__item .item__info .item__title {
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #023A5C;
+}
+
+.post__item .item__info .item__date {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.post__item .item__info .item__author {
+	font-size: 1.3REM;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #023A5C;
+}
+
+.post__item .item__info .item__description {
+	font-size: 1.5rem;
+}
+
+.post__item .item__info .item__link {
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

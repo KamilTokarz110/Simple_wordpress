@@ -10,13 +10,7 @@
  ?>
 
 <?php global $cfs; ?>
-<?php if( has_post_thumbnail() ) {
-    $attachment_page_url = '';
-    $attachment_page_url = get_attachment_link( get_post_thumbnail_id() ); ?>
-    <a href="<?php echo $attachment_page_url; ?>" class="featured-image">
-        <?php the_post_thumbnail(); ?>
-    </a>
-<?php } ?>
+<?php wp_head();?>
 <aside id="sidebar-1" class="main__navigation-fixed">
                 
                 <nav class="menu-fixed">

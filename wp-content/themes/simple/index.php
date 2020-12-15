@@ -14,6 +14,8 @@
 
 // get_header();
 ?>
+
+<?php wp_head();?>
 <?php get_header();?>
 <div id="main" class="main__about content">
             
