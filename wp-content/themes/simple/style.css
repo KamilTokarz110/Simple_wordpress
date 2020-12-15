@@ -2536,7 +2536,7 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 200px;
+	height: 250px;
 }
 
 .post__item .item__info {
@@ -2573,12 +2573,22 @@ html {
 }
 
 .post__item .item__info .item__description {
-	font-size: 1.5rem;
+	text-align: justify;
+	font-size: calc(1.4rem + 0.25vw);
+	width: 70%;
 }
 
 .post__item .item__info .item__link {
 	font-size: 1.4rem;
 	text-decoration: none;
+}
+
+.post__line {
+	border: none;
+	border-top: 2px dotted #023A5C;
+	color: #fff;
+	background-color: #fff;
+	height: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

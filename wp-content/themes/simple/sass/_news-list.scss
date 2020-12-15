@@ -11,7 +11,7 @@
         justify-content: center;
         // flex-wrap: wrap;
         // background-color: goldenrod;
-        height: 200px;
+        height: 250px;
 
 
         .item__info {
@@ -51,7 +51,9 @@
             }
 
             .item__description {
-                font-size: 1.5rem;
+                text-align: justify;
+                font-size: calc(1.4rem + 0.25vw);
+                width: 70%;
             }
 
             .item__link {
@@ -60,6 +62,15 @@
             }
         }
 
+    }
 
+    &__line {
+        border: none;
+        border-top: 2px dotted $main-color;
+        color: #fff;
+        background-color: #fff;
+        height: 2px;
+        // width: 51px;
+        // margin: 10px 0px;
     }
 }

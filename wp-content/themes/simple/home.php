@@ -34,15 +34,15 @@ Template Name: NewsTemp
 					<a href="<?php the_permalink();?>"><img class = "news__item-image item__image " src="<?php echo the_post_thumbnail(); ?>"></a>
 					
 						<div class="item__info">
-                            <h3 class="item__title"><?php the_title();?></h3>
+                        <a class="item__link" href="<?php the_permalink();?>"> <h3 class="item__title"><?php the_title();?></h3></a>
                             <p class="item__date" >By <span class="item__author"><?php the_author();?></span> on <?php echo get_the_date('d.m.Y');?></p>
-						    <p class="item__description"><?php echo get_the_excerpt();?></p>
+						    <p class="item__description"> <?php echo wp_trim_words( get_the_content(), 30, ' ...' ); ?></p>
 						<!-- <hr> -->
 						    <a class="item__link" href="<?php the_permalink();?>">wiecej</a>
                         </div>
-
-                        </div>
-               
+                           
+                </div>
+                <hr class="post__line">
                 
 				<?php endwhile; ?>
 			
