@@ -15,19 +15,19 @@
             
             <div class="content content--contact">
             <div class="footer__slider--small">
-                    <div class="company__item--small"><img src="images/footer_ernst.png" alt=""></div>
-                    <div class="company__item--small"><img src="images/footer_bell.png" alt=""></div>
-                    <div class="company__item--small"><img src="images/footer_ministerstwo.png" alt=""></div>
-                    <div class="company__item--small"><img src="images/footer_tnt.png" alt=""></div>
-                    <div class="company__item--small"><img src="images/footer_visiton-express.png" alt=""></div>
+                    <div class="company__item--small"><img src="http://localhost/simple/wp-content/uploads/2020/12/footer_ernst.png" alt=""></div>
+                    <div class="company__item--small"><img src="http://localhost/simple/wp-content/uploads/2020/12/footer_bell.png" alt=""></div>
+                    <div class="company__item--small"><img src="http://localhost/simple/wp-content/uploads/2020/12/footer_ministerstwo.png" alt=""></div>
+                    <div class="company__item--small"><img src="http://localhost/simple/wp-content/uploads/2020/12/footer_tnt.png" alt=""></div>
+                    <div class="company__item--small"><img src="http://localhost/simple/wp-content/uploads/2020/12/footer_visiton-express.png" alt=""></div>
                 </div>
                 <div class="footer__company__list">
-                    <div class="company__item"><img class="company__image" src="images/footer_visiton-express.png" alt=""></div>
-                    <div class="company__item"><img class="company__image" src="images/footer_bell.png" alt=""></div>
-                    <div class="company__item"><img class="company__image" src="images/footer_ernst.png" alt=""></div>
-                    <div class="company__item"><img class="company__image" src="images/footer_ministerstwo.png" alt=""></div>
-                    <div class="company__item"><img class="company__image" src="images/footer_tnt.png" alt=""></div>
-                    <div class="company__item"><img class="company__image" src="images/footer_ministerstwo.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="http://localhost/simple/wp-content/uploads/2020/12/footer_visiton-express.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="http://localhost/simple/wp-content/uploads/2020/12/footer_bell.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="http://localhost/simple/wp-content/uploads/2020/12/footer_ernst.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="http://localhost/simple/wp-content/uploads/2020/12/footer_ministerstwo.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="http://localhost/simple/wp-content/uploads/2020/12/footer_tnt.png" alt=""></div>
+                    <div class="company__item"><img class="company__image" src="http://localhost/simple/wp-content/uploads/2020/12/footer_ministerstwo.png" alt=""></div>
                
                 </div>
                
@@ -77,8 +77,8 @@ $(document).ready(function(){
   slidesToShow: 5,
   slidesToScroll: 1,
 
-  prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="images/news_arrow.png" alt=""></div>',
-      nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="images/news_arrow.png" alt=""></div>',
+  prevArrow:'<div class="footer__arrow footer__arrow--right"><img class="arrow__image arrow__image--right arrow__image--rotated" src="http://localhost/simple/wp-content/uploads/2020/12/news_arrow.png" alt=""></div>',
+      nextArrow:'<div class="footer__arrow"><img class="arrow__image" src="http://localhost/simple/wp-content/uploads/2020/12/news_arrow.png" alt=""></div>',
 });
 });
 $(document).ready(function(){

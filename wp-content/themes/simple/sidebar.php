@@ -53,7 +53,7 @@
                     
                     </ul>
                   
-                    <div class="menu-fixed__arrow "><img class="menu-fixed__arrow__image" src="images/side_menu_arrow.png" alt=""></div>
+                    <div class="menu-fixed__arrow "><img class="menu-fixed__arrow__image" src="http://localhost/simple/wp-content/uploads/2020/12/side_menu_arrow.png" alt=""></div>
                     
                 </nav>
                 
