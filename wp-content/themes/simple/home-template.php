@@ -15,7 +15,7 @@ Template Name: HomeTemp
           
            
 
-			<img class="main__about__image main__about__image-show" src="/simple/wp-content/uploads/2020/11/logo_simple_copy" alt="">
+			<img class="main__about__image main__about__image-show" src="<?php echo CFS()->get( 'slider_image_1' );?>" alt="">
 			<img class="main__about__image" src="<?php echo CFS()->get( 'slider_image_2' );?>" alt="">
 			<img class="main__about__image" src="<?php echo CFS()->get( 'slider_image_3' );?>" alt="">
 			<img class="main__about__image" src="<?php echo CFS()->get( 'slider_image_4' );?>" alt="">

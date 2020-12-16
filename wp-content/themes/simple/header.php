@@ -27,12 +27,15 @@
     <?php wp_head();?>
 </head>
 <body>
+
     <div class="wrapper">
         <section id="main__section" class="main">
             <header class="main__header">
                 
             <div class="menu__content content">
-                    <div class="menu__logo"><img class="menu__logo__image" src="<?php echo CFS()->get('menu_image');?>" alt="">
+                    <div class="menu__logo">
+      
+                    <div class="menu__logo__image"> <?php the_custom_logo();?> </div>
             </div>
                 <nav class="menu">
                     <ul class="menu__list">

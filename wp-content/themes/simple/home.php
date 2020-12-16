@@ -17,8 +17,6 @@ Template Name: NewsTemp
 <?php
 			
 						$Post = new WP_Query('type=post'); ?>
-
-		<!-- <div class="news__list"> -->
 						<?php if($Post->have_posts()): ?>
 					
 	 		
@@ -51,7 +49,6 @@ Template Name: NewsTemp
                  </div>
 			</div>
 			
-		<!-- </div> -->
                         </main>
                         </div>
 <?php get_footer(); ?>
