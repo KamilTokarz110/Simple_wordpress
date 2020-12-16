@@ -2532,11 +2532,11 @@ html {
 }
 
 .post__item {
-	margin: 100px 0px;
+	margin: 40px 0px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 250px;
+	height: 200px;
 }
 
 .post__item .item__info {
@@ -2573,7 +2573,7 @@ html {
 }
 
 .post__item .item__info .item__description {
-	text-align: justify;
+	text-align: left;
 	font-size: calc(1.4rem + 0.25vw);
 	width: 70%;
 }
