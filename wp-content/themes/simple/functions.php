@@ -183,7 +183,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 function wpdocs_custom_excerpt_length( $length ) {
-    return 10;
+    return 5;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length');
 function wpdocs_excerpt_more(){

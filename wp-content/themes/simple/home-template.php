@@ -338,20 +338,7 @@ foreach ( $branches as $branch ) { ?>
 					<p class="branch__email"><?php echo $branch['branch_email'];?></p>
 				</div>
 <?php }}?>
-				<!-- <div class="branch__item--small">
-					<p class="branch__name">SIMPLE S.A.- Ośrodek Badawczo<br>-Rozwojowy Lublin</p>
-					<p class="branch__address">ul. Wolska 11A/4<br>20-411 Lublin</p>
-					<p class="branch__phone">tel. kom: +48 696 001 286</p>
-					<p class="branch__email">lublin@simple.com.pl</p>
-				</div>
-				<div class="branch__item--small">
-					<p class="branch__name">SIMPLE S.A. - oddział Rzeszów</p>
-					<p class="branch__address">ul. Rejtana 53A<br>35-326 Rzeszów</p>
-					<p class="branch__phone">tel. kom.: +48 696 001 235</p>
-					<p class="branch__fax">fax.: (17) 865 42 41</p>
-					<p class="branch__email">rzeszow@simple.com.pl</p>
-				</div>
-				 -->
+			
 			</div>
 
 
@@ -395,30 +382,9 @@ foreach ( $branches as $branch ) { ?>
 				<div class="submit__send">
 					<p class="submit__title"><?php echo CFS()->get('form_title');?></p>
 
-					
-					<!-- <form id="form_1" class="send__form" action=""> -->
+				
 					<?php echo do_shortcode('[contact-form-7 id="132" title="Untitled html_id="form_1" html_class="send__form"]');?>
-					<!-- <div class="send__form">
-						<input class="form__input form__input--name" placeholder="Imię&Nazwisko" type="text">
-						<input class="form__input form__input--email" placeholder="Email" type="email">
-						<input class="form__input form__input--number" placeholder="Numer telefonu" type="tel">
-						<input class="form__input form__input--topic" placeholder="Temat" type="text">
-						<textarea class="form__text-area" placeholder="Treść zapytania" name="text-area" id="text-area" cols="30" rows="10"></textarea>
-					<div class="form__checkboxes">
-						<p class="checkboxes__text">Wybierz rodzaj prezentacji</p>
-					 <div class="item">
-						<input class="form__checkbox" id="live" name="live" type="checkbox">
-						<label class="form__checkbox-label" for="live">W siedzibie</label>
-					</div>
-					<div class="item item--right">
-						<input class="form__checkbox" id="multimedial" name="miltimedial" type="checkbox">
-						<label class="form__checkbox-label" for="multimedial">Multimedialna</label>
-					</div>
-						
-					</div>
-					<button type="submit" form="form_1" value="Submit" class="form__button">Wyślij</button>  -->
-					<!-- </div> -->
-					<!-- </form> -->
+		
 				</div>
 				<div class="submit__social">
 					<p class="social__title"><?php echo CFS()->get('social_title');?></p>
